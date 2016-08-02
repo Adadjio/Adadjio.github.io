@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Личный сайт студента GeekBrains</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<div id="header">
+		<a href="index.html">Главная</a> <span>/</span>
+		<a href="puzzle.html">Загадки</a><span>/</span>		
+		<a href="guess.html">Угадайка</a> <span>/</span>
+		<a href="guess-2.html">Угадайка мультиплеер</a> <span>/</span>
+		<a href="bank.html">Банковская программа</a> <span>/</span>
+	</div>
+
+	<div id="content">
+		<h1>Расчет размера вклада</h1>
+		<div id="center">
+			<span><b>Введите размер вклада: </b><input type="text" id="deposit"></span>
+			<br>
+			<span><b>Введите размер процента: </b><input type="text" id="percent"></span>
+			<br>
+			<input type="submit" name="btnCalc" width="50" value="Рассчитать" onclick="calc()">
+
+			<div id="answer"></div>
+		</div>
+	</div>
+
+		<div id="footer">
+			Copyright © 2016 <a href="https://geekbrains.ru/">GeekBrains </a>
+		</div>
+		
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+	</html>

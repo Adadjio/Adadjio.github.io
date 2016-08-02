@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Личный сайт студента GeekBrains</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+
+<script>
+  var answer = parseInt(Math.random() * 100);
+
+    for (var i = 3; i > 0; i--) {
+        var number = parseInt(prompt("Введите ваш вариант ответа. У вас есть " + i + " Попыток"));
+        if (number == answer) {
+            alert("Ура, вы молодец!");
+            break;
+        } else if (number < answer) {
+            alert("Слишком маленькое число");
+        } else if (number > answer) {
+            alert("Слишком большое число");
+        }
+    }
+</script>
+
+
+    
+</head>
+<body>
+
+    <div id="header">
+        <a href="index.html">Главная</a> <span>/</span>
+        <a href="puzzle.html">Загадки</a><span>/</span>     
+        <a href="guess.html">Угадайка</a> <span>/</span>
+        <a href="guess-2.html">Угадайка мультиплеер</a> <span>/</span>
+        <a href="bank.html">Банковская программа</a> <span>/</span>
+    </div>
+
+    <div id="content">
+        <h1>Личный сайт студента GeekBrains</h1>
+        <div id="center">
+            <img src="images/photo.png" width="400" height="400"></img>
+            <div id="box_text">
+                <p>
+                    Добрый день. Меня зову <b>Евгений Андриенко</b>. Я - <i>начинающий front-end программист</i>. Я совсем недавно встал на этот путь, но уже успел написать свой первый сайт.
+                </p>
+                <p>В этом мне помог курс <a href="https://geekbrains.ru/courses/2">Основы программирования</a></p>
+                <p>
+                    На этом сайте вы сможете сыграть в три игры, а так же рассчитать размер своего депозита
+                    на ближайшие 5 лет используя "Банковскую программу".
+                </p>
+                <a href="#">Главная</a>
+                <a href="puzzle.html">Загадки</a>
+                <a href="guess.html">Угадайка</a>
+                <a href="guess-2.html">Угадайка мультиплеер</a>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        Copyright © 2016 <a href="https://geekbrains.ru/">GeekBrains </a>
+    </div>
+
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
